@@ -13,9 +13,10 @@ Bonuses:
 2. List of categories as a menu, easily visible, selected category highlighted
 3. No dropdown and pagination - too little content, will make UI clunky
 4. search works both for all fields and categories
+5. mobile ready
 
-Build with Vue 2 for consistency with original repo
-Used Vuex for storage for being consistent with Vue 2
+Built with Vue 2 for consistency with original repo
+Used Vuex for storage to be consistent with Vue 2
 Used Firebase hosting for demo deploy
-classic javascript
+Classic javascript
 Used Vuetify for fast and elegant styling
