@@ -1,6 +1,7 @@
 <template>
     <v-form>
       <v-text-field v-model="input" 
+        style="width: 150px;"
         dense 
         hide-details
         solo
@@ -21,12 +22,12 @@ export default {
         debouncedInput: "",
     }),
     mounted() {
-        this.$store.dispatch("getPodcasts", "");
+        this.$store.dispatch("getPodcasts", {query:''});
     },
     watch: {
         input: debounce( function (newVal) {
             this.debouncedInput = newVal;
-            this.$store.dispatch("getPodcasts", this.debouncedInput);
+            this.$store.dispatch("getPodcasts", {query: this.debouncedInput});
         }, debounceDelay)
     },
 }
