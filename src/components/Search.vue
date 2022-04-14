@@ -1,7 +1,13 @@
 <template>
-    <form class="searchForm" v-on:submit.prevent="submitSearch">
-      <input type="text" v-model="input" class="white">
-    </form>    
+    <v-form>
+      <v-text-field v-model="input" 
+        dense 
+        hide-details
+        solo
+        outlined
+        clearable
+        append-icon="mdi-magnify" />
+    </v-form>    
 </template>
 
 <script>
